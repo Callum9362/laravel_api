@@ -5,6 +5,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
     <body>
-        <p class="font-weight-bold">This is not going to be a pretty project</p>
+        <h1 class="text-center mb-3">Project API Endpoints</h1>
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>All Articles</td>
+                        <td>A JSON get endpoint with all articles</td>
+                        <td><a href="{{ route('all-articles') }}">Click Here</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
