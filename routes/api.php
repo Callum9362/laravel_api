@@ -32,3 +32,6 @@ Route::get('articles/{id}', [ArticleController::class, 'show'])->name('article-b
 
 // POST AN ARTICLE
 Route::post('articles', [ArticleController::class, 'store'])->name('store-article');
+// DELETE AN ARTICLE
+Route::delete('articles/{id}', [ArticleController::class, 'delete'])->name('delete-article');
+

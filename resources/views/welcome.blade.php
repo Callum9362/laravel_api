@@ -26,6 +26,11 @@
                         <td>Get an article by id</td>
                         <td><a href="{{ route('article-by-id', ['id' => 1]) }}">Click Here</a></td>
                     </tr>
+                    <tr>
+                        <td>Delete Article By ID</td>
+                        <td>Delete an article by id</td>
+                        <td><a href="{{ route('delete-article', ['id' => 50]) }}">Click Here</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

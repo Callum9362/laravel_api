@@ -21,4 +21,10 @@ class ArticleController extends Controller
     {
         return Article::create($request->all);
     }
+
+    public function delete($id)
+    {
+        Article::find($id)->delete();
+        return 204;
+    }
 }
