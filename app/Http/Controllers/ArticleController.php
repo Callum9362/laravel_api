@@ -16,4 +16,9 @@ class ArticleController extends Controller
     {
         return Article::find($id);
     }
+
+    public function store(Request $request)
+    {
+        return Article::create($request->all);
+    }
 }
