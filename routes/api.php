@@ -37,3 +37,4 @@ Route::post('articles', [ArticleController::class, 'store'])->name('store-articl
 Route::delete('articles/{id}', [ArticleController::class, 'delete'])->name('delete-article');
 // GET COUNT OF ALL ARTICLES
 Route::get('article/count', [ArticleCountController::class, 'index'])->name('article-count');
+

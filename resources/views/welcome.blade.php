@@ -36,6 +36,11 @@
                         <td>Get the count of all articles</td>
                         <td><a href="{{ route('article-count') }}">Click Here</a></td>
                     </tr>
+                    <tr>
+                        <td>Article Inserter</td>
+                        <td>Insert a new article</td>
+                        <td><a href="{{ route('article-inserter') }}">Click Here</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
