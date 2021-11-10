@@ -11,4 +11,9 @@ class ArticleController extends Controller
     {
         return Article::all();
     }
+
+    public function show($id)
+    {
+        return Article::find($id);
+    }
 }

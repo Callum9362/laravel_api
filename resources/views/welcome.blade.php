@@ -21,6 +21,11 @@
                         <td>A JSON get endpoint with all articles</td>
                         <td><a href="{{ route('all-articles') }}">Click Here</a></td>
                     </tr>
+                    <tr>
+                        <td>Article By ID</td>
+                        <td>Get an article by id</td>
+                        <td><a href="{{ route('article-by-id', ['id' => 1]) }}">Click Here</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

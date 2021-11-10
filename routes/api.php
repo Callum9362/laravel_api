@@ -20,5 +20,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// API ROUTES FOR ARTICLES
+
+// GET ALL
 //http://localhost:8888/laravel_api/public/api/articles
 Route::get('articles', [ArticleController::class, 'index'])->name('all-articles');
+
+// GET BY ID
+Route::get('articles/{id}', [ArticleController::class, 'show'])->name('article-by-id');
