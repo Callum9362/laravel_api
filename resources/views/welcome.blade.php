@@ -31,6 +31,11 @@
                         <td>Delete an article by id</td>
                         <td><a href="{{ route('delete-article', ['id' => 50]) }}">Click Here</a></td>
                     </tr>
+                    <tr>
+                        <td>Article Count</td>
+                        <td>Get the count of all articles</td>
+                        <td><a href="{{ route('article-count') }}">Click Here</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ArticleCountController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -34,4 +35,5 @@ Route::get('articles/{id}', [ArticleController::class, 'show'])->name('article-b
 Route::post('articles', [ArticleController::class, 'store'])->name('store-article');
 // DELETE AN ARTICLE
 Route::delete('articles/{id}', [ArticleController::class, 'delete'])->name('delete-article');
-
+// GET COUNT OF ALL ARTICLES
+Route::get('article/count', [ArticleCountController::class, 'index'])->name('article-count');
