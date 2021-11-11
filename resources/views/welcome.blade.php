@@ -41,6 +41,16 @@
                         <td>Insert a new article</td>
                         <td><a href="{{ route('article-inserter') }}">Click Here</a></td>
                     </tr>
+                    <tr>
+                        <td>All Flights</td>
+                        <td>Get all flights information</td>
+                        <td><a href="{{ route('flights') }}">Click Here</a></td>
+                    </tr>
+                    <tr>
+                        <td>Flight by Name</td>
+                        <td>Get a flight by passenger name</td>
+                        <td><a href="{{ route('flight-by-name', ['name' => 'Christy Reichel']) }}">Click Here</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

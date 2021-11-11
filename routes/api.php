@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArticleCountController;
+use App\Http\Controllers\FlightsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -38,4 +39,11 @@ Route::delete('articles/{id}', [ArticleController::class, 'delete'])->name('dele
 // GET COUNT OF ALL ARTICLES
 Route::get('article/count', [ArticleCountController::class, 'index'])->name('article-count');
 
+// API ROUTES FOR FLIGHTS
+
+// GET ALL FLIGHTS
+Route::get('flights', [FlightsController::class, 'index'])->name('flights');
+
+// GET A FLIGHT BY ITS NAME
+Route::get('flights/{name}', [FlightsController::class, 'show'])->name('flight-by-name');
 
