@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArticleCountController;
 use App\Http\Controllers\FlightsController;
+use App\Http\Controllers\FlightByAirlineController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +45,8 @@ Route::get('article/count', [ArticleCountController::class, 'index'])->name('art
 // GET ALL FLIGHTS
 Route::get('flights', [FlightsController::class, 'index'])->name('flights');
 
-// GET A FLIGHT BY ITS NAME
+// GET A FLIGHT BY PASSENGER NAME
 Route::get('flights/{name}', [FlightsController::class, 'show'])->name('flight-by-name');
 
+// GET A FLIGHT BY PASSENGER NAME AND AIRLINE NAME
+Route::get('flights/{name}/{airline}', [FlightByAirlineController::class, 'index'])->name('flight-by-name-airline');

@@ -51,6 +51,11 @@
                         <td>Get a flight by passenger name</td>
                         <td><a href="{{ route('flight-by-name', ['name' => 'Christy Reichel']) }}">Click Here</a></td>
                     </tr>
+                    <tr>
+                        <td>Flight by Name and Airline</td>
+                        <td>Get a flight by passenger name and airline</td>
+                        <td><a href="{{ route('flight-by-name-airline', ['name' => 'Arch Jerde', 'airline' => 'Prof. Nicholaus Hamill']) }}">Click Here</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
