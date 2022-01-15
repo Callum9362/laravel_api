@@ -22,6 +22,7 @@ class ArticlesTableSeeder extends Seeder
             Article::create([
                 'title' => $faker->sentence,
                 'body' => $faker->paragraph,
+                'view_count' => $faker->randomNumber(5, false)
             ]);
         }
     }
