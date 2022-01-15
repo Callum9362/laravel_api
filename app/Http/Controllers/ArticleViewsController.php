@@ -9,7 +9,7 @@ class ArticleViewsController extends Controller
 {
     public function index()
     {
-        dd(Article::where('view_count')->max('view_count')->get());
-        return Article::max('view_count');
+        $maxCount = Article::max('view_count');
+        return Article::where('view_count', $maxCount)->get();
     }
 }
