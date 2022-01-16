@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArticleCountController;
 use App\Http\Controllers\ArticleViewsController;
+use App\Http\Controllers\ArticleTotalViewsController;
 use App\Http\Controllers\FlightsController;
 use App\Http\Controllers\FlightByAirlineController;
 use Illuminate\Http\Request;
@@ -42,6 +43,8 @@ Route::delete('articles/{id}', [ArticleController::class, 'delete'])->name('dele
 Route::get('article/count', [ArticleCountController::class, 'index'])->name('article-count');
 // GET THE ARTICLE WITH THE MOST VIEWS
 Route::get('article/mostviews', [ArticleViewsController::class, 'index'])->name('most-article-views');
+
+Route::get('article/totalviews', [ArticleTotalViewsController::class, 'index'])->name('total-article-views');
 
 
 // API ROUTES FOR FLIGHTS
