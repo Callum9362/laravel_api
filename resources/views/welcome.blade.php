@@ -47,6 +47,11 @@
                         <td><a href="{{ route('total-article-views') }}">Click Here</a></td>
                     </tr>
                     <tr>
+                        <td>Average Article Views</td>
+                        <td>Get the average views of all article views.</td>
+                        <td><a href="{{ route('avg-article-views') }}">Click Here</a></td>
+                    </tr>
+                    <tr>
                         <td>Article Inserter</td>
                         <td>Insert a new article</td>
                         <td><a href="{{ route('article-inserter') }}">Click Here</a></td>
