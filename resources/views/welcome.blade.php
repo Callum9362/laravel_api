@@ -57,6 +57,11 @@
                         <td><a href="{{ route('article-inserter') }}">Click Here</a></td>
                     </tr>
                     <tr>
+                        <td>Article Body Length</td>
+                        <td>Get the article with the largest body of text.</td>
+                        <td><a href="{{ route('length') }}">Click Here</a></td>
+                    </tr>
+                    <tr>
                         <td>All Flights</td>
                         <td>Get all flights information</td>
                         <td><a href="{{ route('flights') }}">Click Here</a></td>

@@ -7,6 +7,7 @@ use App\Http\Controllers\ArticleTotalViewsController;
 use App\Http\Controllers\AverageArticleViewController;
 use App\Http\Controllers\FlightsController;
 use App\Http\Controllers\FlightByAirlineController;
+use App\Http\Controllers\ArticleLengthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -48,6 +49,8 @@ Route::get('article/mostviews', [ArticleViewsController::class, 'index'])->name(
 Route::get('article/totalviews', [ArticleTotalViewsController::class, 'index'])->name('total-article-views');
 // GET THE AVERAGE VIEWS OF ALL ARTICLES
 Route::get('article/average', [AverageArticleViewController::class, 'index'])->name('avg-article-views');
+// GET THE AVERAGE VIEWS OF ALL ARTICLES
+Route::get('article/length', [ArticleLengthController::class, 'index'])->name('length');
 
 // API ROUTES FOR FLIGHTS
 
